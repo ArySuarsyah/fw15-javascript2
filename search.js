@@ -1,40 +1,23 @@
 function searchName(input, number, call) {
-    const name = [
-        "Abigail",
-        "Alexandra",
-        "Alison",
-        "Amanda",
-        "Angela",
-        "Bella",
-        "Carol",
-        "Caroline",
-        "Carolyn",
-        "Deirdre",
-        "Diana",
-        "Elizabeth",
-        "Ella",
-        "Faith",
-        "Olivia",
-        "Penelope",
-    ];
+    const name = [ "Abigail", "Alexandra", "Alison", "Amanda", "Angela", "Bella", "Carol", "Caroline", "Carolyn", "Deirdre", "Diana", "Elizabeth", "Ella", "Faith", "Olivia","Penelope",];
 
-    input = name.map((el) => el.toLowerCase()).filter((el) => el.includes(input));
+    data = name.map((el) => el.toLowerCase()).filter((el) => el.includes(input.toLowerCase()));
     let newArr = [];
-    if (number || typeof number == number) {
+    if (number) {
         for (let i = 0; i < number; i++) {
-            if (input[i] !== undefined) {
-                newArr.push(input[i]);
+            if (data[i] !== undefined) {
+                newArr.push(data[i]);
             }
         }
         call(newArr);
     } else {
-        call(input);
+        call(data);
     }
 }
 
 function search(result) {
-    console.log(result);
+    console.log(result.join(', '));
 }
 
-searchName("el", 3, search);
-searchName("el", "", search);
+searchName("El", 3, search); // angela, bella, elizabeth
+searchName("el", "", search); // angela, bella, elizabeth, ella, penelope

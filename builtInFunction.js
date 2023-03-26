@@ -3,8 +3,8 @@
 
 // cara penggunaan
 // const fruits = ['Apple','Strawberry', 'Orange']
-// fruits.indexOf('Orange'); //output 2
-// fruits.indexOf('Banana'); // -1
+// console.log(fruits.indexOf("Orange")); //output 2
+// console.log(fruits.indexOf("Banana")); // -1
 
 
 
@@ -13,8 +13,8 @@
 
 // cara penggunaan
 // const fruits = ['Avocado','Pinnaple','Cherry','Apple', 'Strawberry', 'Orange', 'Banana'];
-// fruits.slice(0,3) // output ['Avocado','Pinnaple','Cherry']
-// fruits.slice(3) // output ['Apple', 'Strawberry', 'Orange', 'Banana'];
+// console.log(fruits.slice(0, 3)); // output ['Avocado','Pinnaple','Cherry']
+// console.log(fruits.slice(3)); // output ['Apple', 'Strawberry', 'Orange', 'Banana'];
 
 
 
@@ -33,9 +33,9 @@
 // 4. filter = merupakan sebuah method dalam javascript yang berfungsi untuk mencari semua element dalam array yang sesuai dengan kriteria tertentu. method ini mengembalikan array baru dan tidak merubah array lama.
 
 // cara penggunaan
-// const source = [12, 55, 6, 10, 9, 70, 4, 20, 25, 19, 15];
-// const filtered = source.filter((el) => el % 2 == 0)
-// console.log(filtered); // output [12, 6, 10, 70, 4, 20]
+const source = [12, 55, 6, 10, 9, 70, 4, 20, 25, 19, 15];
+const filtered = source.filter((el) => el % 2 == 0)
+console.log(filtered); // output [12, 6, 10, 70, 4, 20]
 
 
 
